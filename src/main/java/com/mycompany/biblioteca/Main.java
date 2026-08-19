@@ -66,4 +66,18 @@ public class Main {
 
         System.out.println("Cliente actualizado con éxito.");
     }
+
+    public static void deleteClient() {
+        System.out.print("\nIngrese el ID del cliente a eliminar: ");
+        String id = sc.nextLine();
+        Client client = searchClient(id);
+
+        if (client == null) {
+            System.out.println("Cliente no encontrado.");
+            return;
+        }
+
+        clients.remove(client);
+        System.out.println("Cliente eliminado con éxito.");
+    }
 }
