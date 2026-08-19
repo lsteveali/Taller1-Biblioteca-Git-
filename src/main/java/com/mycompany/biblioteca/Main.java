@@ -1,14 +1,13 @@
 package com.mycompany.biblioteca;
 
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
+    static ArrayList<Client> clients = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-
-            System.out.println("i = " + i);
-        }
+        // Main menu goes here (Phase 8)
     }
 }
